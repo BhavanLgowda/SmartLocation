@@ -1,0 +1,319 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: E:\windows_Apllication\Smart Locartion update2.0.0.74\SmartLocationApp.exe-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DB4D3236-57DB-4D55-9ECC-241EC8EB95A0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>SmartLocationApp</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <ApplicationVersion>2.0.0.74</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>SmartLocationApp</RootNamespace>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>SmartLocationApp.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AForge.Video">
+      <HintPath>lib\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow">
+      <HintPath>lib\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
+    <Reference Include="AutoUpdater.NET">
+      <HintPath>lib\AutoUpdater.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="BarcodeLib">
+      <HintPath>lib\BarcodeLib.dll</HintPath>
+    </Reference>
+    <Reference Include="BarcodeLib.BarcodeReader">
+      <HintPath>lib\BarcodeLib.BarcodeReader.dll</HintPath>
+    </Reference>
+    <Reference Include="CameraControl.Devices">
+      <HintPath>lib\CameraControl.Devices.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis">
+      <HintPath>lib\Google.Apis.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Auth">
+      <HintPath>lib\Google.Apis.Auth.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Core">
+      <HintPath>lib\Google.Apis.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.YouTube.v3">
+      <HintPath>lib\Google.Apis.YouTube.v3.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>lib\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.WindowsAzure.Storage">
+      <HintPath>lib\Microsoft.WindowsAzure.Storage.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.SQLite">
+      <HintPath>lib\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base_Form\AdminUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base_Form\AdminUser.Designer.cs">
+      <DependentUpon>AdminUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base_Form\FailedPhotosForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base_Form\FailedPhotosForm.Designer.cs">
+      <DependentUpon>FailedPhotosForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base_Form\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base_Form\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base_Form\ScannerTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Base_Form\ShowLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base_Form\ShowLog.Designer.cs">
+      <DependentUpon>ShowLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base_Form\Splash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base_Form\Splash.Designer.cs">
+      <DependentUpon>Splash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base_Form\TestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base_Form\TestForm.Designer.cs">
+      <DependentUpon>TestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base_Form\usbMode.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Base_Form\webCamBarcode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base_Form\webCamBarcode.Designer.cs">
+      <DependentUpon>webCamBarcode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\CameraLiveViewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\CameraLiveViewForm.Designer.cs">
+      <DependentUpon>CameraLiveViewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Setting\HueSatirationSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\Setting\HueSatirationSettings.designer.cs">
+      <DependentUpon>HueSatirationSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Setting\OutputFolders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\Setting\outputFolders.Designer.cs">
+      <DependentUpon>OutputFolders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="smartlocation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Source\AdminLogin.cs" />
+    <Compile Include="Source\Constant.cs" />
+    <Compile Include="Source\Datas.cs" />
+    <Compile Include="Source\Function.cs" />
+    <Compile Include="Source\GeneralWebMessage.cs" />
+    <Compile Include="Source\PhotoBarcodeItmes.cs" />
+    <Compile Include="Source\PhotoBarcode.cs" />
+    <Compile Include="Source\SaveFacesResponse.cs" />
+    <Compile Include="Source\FaceData.cs" />
+    <Compile Include="Source\HiddenDevice.cs" />
+    <Compile Include="Source\JsonData.cs" />
+    <Compile Include="Source\Ticket.cs" />
+    <Compile Include="Source\Item.cs" />
+    <Compile Include="Source\Locations.cs" />
+    <Compile Include="Source\MidnightNotifier.cs" />
+    <Compile Include="Source\OutputFoldersStructure.cs" />
+    <Compile Include="Source\ItemPoint.cs" />
+    <Compile Include="Source\Points.cs" />
+    <Compile Include="Source\fileSourceDest.cs" />
+    <Compile Include="Source\ProducerConsumer.cs" />
+    <Compile Include="Source\ReadWrite.cs" />
+    <Compile Include="Source\HttpVerb.cs" />
+    <Compile Include="Source\RestClient.cs" />
+    <Compile Include="Source\SqlCrud.cs" />
+    <Compile Include="Source\UploadItem.cs" />
+    <Compile Include="Source\USBDeviceInfo.cs" />
+    <Compile Include="Source\ErrorCode.cs" />
+    <Compile Include="Source\UsbInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs" />
+    <Compile Include="Router\Animation.cs" />
+    <Compile Include="Router\PageRouter.cs" />
+    <Compile Include="Router\TextBoxListener.cs" />
+    <Compile Include="Pages\BarcodePrint.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\DigitalUSB.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\GalacticTv.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\ModeChooser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\PhotoUploader.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\PortWatcher.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\GalacticTvSetting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\LocalServerSetting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\photoSalesSettingcs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\PhotoTakenSetting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\Login.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\SelectModeType.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\Setting\BarcodePrintSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\ScanAndCreateBarcode\ScanBarcode.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\Classes\AzureUpload.cs" />
+    <Compile Include="Pages\Classes\UploadResponse.cs" />
+    <Compile Include="Pages\Classes\UnloadedResponse.cs" />
+    <Compile Include="Pages\Classes\SendUploadResponse.cs" />
+    <Compile Include="Pages\Classes\VideoItem.cs" />
+    <Compile Include="Pages\Classes\GetLatSoldTicketsResponse.cs" />
+    <Compile Include="Pages\Classes\Button Ellipse.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Pages\Classes\CameraLiveView.cs" />
+    <Compile Include="Pages\Classes\FunctionHelper.cs" />
+    <Compile Include="Pages\Classes\IFilter.cs" />
+    <Compile Include="Pages\Classes\HLSFilter.cs" />
+    <Compile Include="Pages\Classes\1HLSFilter.cs" />
+    <Compile Include="Pages\Classes\RemoveBgListener.cs" />
+    <Compile Include="Pages\Classes\RemoveBgHelper.cs" />
+    <Compile Include="Pages\Classes\VideoUpload.cs" />
+    <Compile Include="Pages\Classes\BWorker.cs" />
+    <Compile Include="Pages\Classes\CClasses.cs" />
+    <Compile Include="Pages\Classes\Logger.cs" />
+    <Compile Include="Pages\Classes\MyFileSystemWatcher.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Pages\Classes\NotifyStpreport.cs" />
+    <Compile Include="Pages\Classes\PodcamHelpers.cs" />
+    <Compile Include="Pages\Classes\PodcamListener.cs" />
+    <Compile Include="Pages\Classes\YouTube.cs" />
+    <Compile Include="Models\NotifyData.cs" />
+    <Compile Include="Models\PodcamModels.cs" />
+    <Compile Include="Models\1PodcamModels.cs" />
+    <Compile Include="Models\2PodcamModels.cs" />
+    <Compile Include="Models\3PodcamModels.cs" />
+    <Compile Include="Models\4PodcamModels.cs" />
+    <Compile Include="Models\VideoFile.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Base_Form\AdminUser.resources" />
+    <EmbeddedResource Include="Base_Form\FailedPhotosForm.resources" />
+    <EmbeddedResource Include="Base_Form\MainForm.resources" />
+    <EmbeddedResource Include="Base_Form\ShowLog.resources" />
+    <EmbeddedResource Include="Base_Form\Splash.resources" />
+    <EmbeddedResource Include="Base_Form\TestForm.resources" />
+    <EmbeddedResource Include="Base_Form\usbMode.resources" />
+    <EmbeddedResource Include="Base_Form\webCamBarcode.resources" />
+    <EmbeddedResource Include="Pages\BarcodePrint.resx" />
+    <EmbeddedResource Include="Pages\CameraLiveViewForm.resources" />
+    <EmbeddedResource Include="Pages\DigitalUSB.resx" />
+    <EmbeddedResource Include="Pages\GalacticTv.resx" />
+    <EmbeddedResource Include="Pages\GalacticTvSetting.resx" />
+    <EmbeddedResource Include="Pages\LocalServerSetting.resx" />
+    <EmbeddedResource Include="Pages\Login.resx" />
+    <EmbeddedResource Include="Pages\ModeChooser.resx" />
+    <EmbeddedResource Include="Pages\photoSalesSettingcs.resx" />
+    <EmbeddedResource Include="Pages\PhotoTakenSetting.resx" />
+    <EmbeddedResource Include="Pages\PhotoUploader.resx" />
+    <EmbeddedResource Include="Pages\PortWatcher.resx" />
+    <EmbeddedResource Include="Pages\ScanAndCreateBarcode\ScanBarcode.resx" />
+    <EmbeddedResource Include="Pages\SelectModeType.resx" />
+    <EmbeddedResource Include="Pages\Setting\BarcodePrintSettings.resources" />
+    <EmbeddedResource Include="Pages\Setting\HueSatirationSettings.resources" />
+    <EmbeddedResource Include="Pages\Setting\outputFolders.resources" />
+    <EmbeddedResource Include="Properties\Resources.resx" />
+    <EmbeddedResource Include="smartlocation.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings1.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SmartLocationApp.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
